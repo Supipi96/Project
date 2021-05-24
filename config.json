@@ -1,0 +1,22 @@
+{
+    "env": "development",
+    "port": 3000,
+    "development_database": {
+      "user": "postgres",
+      "password": "test123",
+      "database": "xoom_db",
+      "host": "localhost",
+      "port": "5432",
+      "max": 50,
+      "idleTimeoutMillis": 30000
+    },
+    "production_database": {
+      "user": "postgres",
+      "password": "test123",
+      "database": "xoom_db",
+      "host": "localhost",
+      "port": "5432",
+      "max": 50,
+      "idleTimeoutMillis": 30000
+    }
+  }
