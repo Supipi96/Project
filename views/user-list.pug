@@ -1,0 +1,21 @@
+doctype html
+html(lang='en')
+  head
+    title Fetch using MySQL and Node.js
+  body
+    h2 Display Data using Node.js & MySQL
+      if(userData.length!=0)
+        userData.forEach(function(data){ var i=1 , i++; }) 
+        table
+          tbody
+            tr
+              th First name
+              th Last Name
+              th Address
+            tr
+              td= userData.first_name
+              td= userData.last_name
+              td= address
+      else  
+            tr
+              td(colspan='3') No Data Found

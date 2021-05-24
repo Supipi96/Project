@@ -1,0 +1,72 @@
+extends layout
+block content
+  body(style='margin:10px') 
+    .navbar(style='padding-top: 0px;padding-bottom: 0px;justify-content:left;')
+      a.active(href='/new' style='background-color: blue;')
+        i.fa.fa-fw.fa-bars
+      a(href='' style='font-family:LEIXO-DEMO' id='nav-logo')  Xoom Hotel
+      a(href='' id='cart-logo')
+        i.fa.fa-fw.fa-home
+    .topnav(style='margin-top: 5px;')
+      .search-container
+        form(action='/action_page.php')
+          input(type='text' placeholder='Search..' name='search')
+          button(type='submit')
+            i.fa.fa-search
+    br
+    center 
+      .responsive
+        .gallery
+          a(href='/package')
+            img(src='images/img1.jpg' alt='Spa Gallery')
+        .desc Package 1
+      .responsive
+        .gallery
+          a(href='images/img2.jpg')
+            img(src='images/img2.jpg' alt='Spa Gallery')
+        .desc Package 2
+      .responsive
+        .gallery
+          a(href='images/img1.jpg')
+            img(src='images/img1.jpg' alt='Spa Gallery')
+        .desc Package 3
+      .responsive
+        .gallery
+          a(href='images/img2.jpg')
+            img(src='images/img2.jpg' alt='Spa Gallery')
+        .desc Package 4
+      .responsive
+        .gallery
+          a(href='images/img1.jpg')
+            img(src='images/img1.jpg' alt='Spa Gallery')
+        .desc Package 5
+      .responsive
+        .gallery
+          a(href='images/img2.jpg')
+            img(src='images/img2.jpg' alt='Spa Gallery')
+        .desc Package 6
+      .responsive
+        .gallery
+          a(href='images/img1.jpg')
+            img(src='images/img1.jpg' alt='Spa Gallery')
+        .desc Package 7
+      .responsive
+        .gallery
+          a(href='images/img2.jpg')
+            img(src='images/img2.jpg' alt='Spa Gallery')
+        .desc Package 8
+    #myNav2.overlay
+      a.closebtn(href='javascript:void(0)' onclick='closeNav2()') ×
+      .overlay-content
+        a(href='/spa') Spa
+        a(href='/parking') Parking
+        a(href='#') Taxi / Shuttle
+        a(href='#') Boke
+        a(href='#') Public transport
+    script.
+      function openNav2() {
+      document.getElementById("myNav2").style.height = "100%";
+      }
+      function closeNav2() {
+      document.getElementById("myNav2").style.height = "0%";
+      }

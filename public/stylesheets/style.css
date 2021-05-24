@@ -1,0 +1,1185 @@
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+
+
+body {
+
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+/*font*/
+
+@font-face{
+  font-family:LemonJelly;
+  src:url(../fonts/LemonJelly.ttf);
+  
+}
+  
+@font-face{
+  font-family:LEIXO-DEMO;
+  src:url(../fonts/LEIXO-DEMO.ttf);
+  
+}
+  
+@font-face{
+  font-family:Oswald-VariableFont_wght;
+  src:url(../fonts/Oswald-VariableFont_wght.ttf);
+    
+}
+
+/* For index page */
+/* Logo */
+.logo {
+  text-align:center;
+  padding:0px 0px 30px 0px;
+}
+
+#enter_name{
+  font-size: 20px;
+}
+
+
+
+/* content align */
+
+.content {
+    text-align: center;
+    margin: auto;
+    background: white;
+   
+}
+
+/* Button Styles */
+
+.button {
+
+  display: inline-flex;
+  height: 50px;
+  width: 250px;
+  border: 2px solid #0099ff;
+  margin: 20px 20px 20px 20px;
+  color: #0099ff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size:15px;
+  letter-spacing: 1.5px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+}
+
+
+.button a{
+  text-decoration: none;
+
+}
+
+
+a {
+  color: #BFC0C0;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+/* Button of select page */
+
+#button-2 {
+  position:relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#button-2 a {
+  position: relative;
+  transition: all .35s ease-Out;
+}
+
+#slide {
+  width: 100%;
+  height: 100%;
+  left: -300px;
+  background: #0099ff;
+  position: absolute;
+  transition: all .35s ease-Out;
+  bottom: 0;
+  
+}
+
+#button-2:hover #slide {
+  left: 0;
+  
+}
+
+#button-2:hover a {
+  color: white;
+}
+
+
+.center-block {
+  position: relative;
+  text-align:center;
+  margin-bottom:25px; 
+  width:80%;
+}
+
+
+/* Search button */
+
+* {box-sizing: border-box;}
+
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 15px;
+  margin-top: 8px;
+  font-size: 12px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+
+/* image icon in packages */
+
+#img-icon, #img-icon1 {
+
+  background-color:lightgrey;
+  border: none;
+  padding: 80px;
+  text-align: center;
+  font-size: large;
+  margin-top: 0px;
+
+}
+
+#img-description {
+  text-align: center;
+
+}
+
+/* Overlay */
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 195, 255);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 10%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 30px;
+}
+
+/* card */
+.card {
+  width: 95%;
+  background-color: white;
+  margin: 10px;
+  border: 2px solid rgb(51, 51, 105); 
+}
+
+
+/*footer*/
+
+#footer{
+
+  position:fixed;
+  bottom: 30px;
+  width: 100%;
+  height: 7rem;            /* Footer height */
+  font-family: var(--bs-font-sans-serif);
+  width: 100%;
+  height:2.5rem;
+  text-align: center;
+  font-size: 15px;
+}
+
+/* Card */
+
+.card{
+  width: 95%;
+  background-color: white;
+  margin: 10px;
+  border: 2px solid rgb(51, 51, 105); 
+}
+
+
+/* top navbar*/
+
+
+/* Style the navigation bar */
+  .navbar {
+    width: 100%;
+    background-color: #0099ff;
+    overflow: auto;
+  }
+  
+  /* Navbar links */
+  .navbar a {
+    float: left;
+    text-align: center;
+    padding: 18px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Navbar links on mouse-over */
+  .navbar a:hover {
+    background-color: #000;
+  }
+  
+
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 90%;
+  width: 40%;
+  position: fixed;
+  z-index: 1;
+  bottom: 0px;
+  left: 0;
+  background-color: rgb(96, 96, 204);
+  overflow-x: hidden;
+  border: none;
+}
+
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+
+}
+
+/* nav bar for spa*/
+
+.navbar-toggler .navbar-toggler-icon{
+  background-color: black;
+  color:white;
+  border: none;
+  margin: none;
+}
+ 
+.container-fluid {
+  background-color: white;
+  margin: none;
+
+}
+
+
+/* Gallery */
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  padding-top: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive, .responsive1 {
+  padding: 0 10px;
+  float: left;
+  width: 24.99999%;
+}
+
+.curved.upper{
+
+top: 0px;
+background:#fff;
+
+}
+
+
+#curved{
+
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height:2.5rem;
+  text-align: center;
+  
+}
+
+
+
+/* shopping cart icon */
+
+#shopping-cart {
+  padding-right: 30px;
+  font-size: 25px;
+}
+
+/* content of a food item or a service package */
+section {
+  
+  background-color: plum;;
+
+}
+
+
+/* Scorral */
+.scrollbar-auto {
+  scrollbar-width: auto;
+  background-color: lightgray;
+  height: 190px;
+  width: 100%;
+  text-align:left;
+  overflow-y: scroll;
+    
+}
+
+/* Table */
+
+table {
+  table-layout: fixed ;
+  color: rgb(104, 103, 103);
+   
+}
+
+
+td {
+  width: 25% ;
+  height: 40px;
+  text-align: center;
+}
+
+th{
+  width: 25% ;
+  padding-bottom: 5px;
+  padding-top: 0px;
+  text-align: center;
+  
+}
+
+
+
+/* media */
+
+@media only screen and (min-width: 1024px){
+
+
+  #img-description1 {
+    width:65%;
+    text-align: center;
+    padding-left: 400px;
+    padding-top: 7px;
+  
+  }
+
+  .overlay .closebtn {
+    font-size: 60px;
+  }
+
+  
+  .center-block{
+    font-size: 40px;
+  }
+
+  h1{
+    font-size:60px;
+  }
+
+  .button a{
+    font-size: 60px;
+
+  }
+
+  .button{
+    height: 100px;
+    width: 340px;
+  
+  }
+
+  #footer {
+    bottom: 200px;
+  }
+
+  .overlay-content a{
+    font-size: 55px;
+  }
+  
+
+
+}
+
+
+@media only screen and (min-width: 768px){
+
+  .logo{
+    font-size: 50px;
+  }
+
+  #enter_name{
+    font-size: 30px;
+   
+  }
+  
+  #footer{
+    bottom:40px;
+  }
+
+  input[type=text] {
+    width: 93%;
+    margin-left: 10px ;
+    margin-right: 10px;
+  }
+
+
+  .center-block{
+    font-size: 30px;
+  }
+
+  .button a{
+    font-size: 25px;
+
+  }
+
+  .button{
+    height: 80px;
+    width: 300px;
+  
+  }
+
+  .overlay-content a{
+    font-size: 30px;
+  }
+
+  li{
+    font-size: 24px;
+  }
+
+  #description{
+    font-size: 25px;
+  }
+
+ 
+}
+
+@media only screen and (min-width: 1024px){
+  #footer{
+    bottom:80px;
+  }
+
+}
+
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+
+  }
+    
+}
+
+  
+@media only screen and (max-width: 500px) {
+    
+  .responsive, .responsive1 {
+    width: 50%;
+  }
+
+
+  .heading {
+    margin: 0 15px 10px 15px;
+  }
+    
+  #img-description{
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 320px){
+  .navbar a{
+    padding: 10px 15px;
+  }
+
+  #nav-logo{
+    padding-left:60px ;
+    padding-right:50px ;
+  }
+
+  #cart-logo{
+    padding-left: 10px;
+    padding-right:10px ;
+
+  }
+
+  th{
+    font-size: 13px;
+  }
+
+  #price-display {
+    margin-bottom: 60px;
+  }
+
+}
+
+  
+@media only screen and (max-width: 280px) {
+
+  .button {
+   
+    width: 200px;
+  }
+
+  #footer{
+    bottom: 40px;
+  }
+ .btn{
+  padding: 0px;
+ }
+
+  #shopping-cart {
+    font-size: 25px;
+  }
+
+  .btn {
+    padding:10px;
+  }
+
+  .navbar a {
+    padding-left: 13px;
+    padding-right: 13px;
+    font-size: 15px;
+  
+  }
+
+  #nav-logo{
+    padding-left:40px ;
+    padding-right:40px ;
+  }
+
+  #cart-logo{
+    padding-left: 10px;
+    padding-right:10px ;
+
+  }
+
+  #price-display{
+    margin-bottom: 3rem;
+  }
+
+  .card{
+    width: 93%;
+  }
+
+  th{
+    font-size: 12px;
+  }
+  .bd-highlight{
+    font-size: 15px;
+  }
+
+  h3{
+    font-size: 20px;
+  }
+
+  .fa.fa-trash::before{
+    padding-left: 0px;
+  }
+
+}
+
+@media only screen and (max-height: 568px) {
+  .scrollbar-auto {
+    height: 120px;
+  }
+
+  td {
+    height: 30px;
+  }
+
+}
+
+@media only screen and (min-height: 1024px) {
+
+  .heading{
+    margin-left: 10px;
+  }
+
+  #shopping-cart {
+    padding-top: 15px;
+    font-size: 30px;
+  }
+
+  
+  .responsive, .responsive1 {
+    padding: 0 10px;
+    float: left;
+    width: 32.999%;
+  }
+
+  .desc{
+    font-size: 25px;
+  }
+ 
+  #footer{
+    font-size: 25px;
+  }
+
+  h2{
+    font-size: 40px;
+  }
+
+  .btn{
+    font-size: 25px;
+    height: 60px;
+
+  }
+
+  p{
+    font-size: 30px;
+  }
+
+  th, td {
+    font-size: 30px;
+  }
+  
+  .scrollbar-auto {
+    height: 300px;
+   
+      
+  }
+
+  
+}
+
+@media only screen and (min-height: 1300px) {
+
+  .logo{
+    font-size: 70px;
+  }
+
+  #enter_name{
+    font-size: 40px;
+  }
+
+  #button-2 a{
+    font-size: 30px;
+  }
+  
+  .button {
+    height: 100px;
+    width: 400px;
+  }
+
+  .overlay-content a {
+    font-size: 50px;
+  }
+
+  .dropdown-menu{
+    padding-right: 20px;
+  }
+
+  li{
+    font-size: 35px;
+  }
+
+  #shopping-cart{
+    font-size: 40px;
+  }
+
+  .cart{
+    padding-left: 40px;
+  }
+
+  .menu {
+    margin-right: 60px;
+  }
+
+  #img-description{
+    width: 90%;
+    padding-left: 50px;
+  }
+
+  #footer{
+    font-size: 30px;
+  }
+
+  p{
+    font-size: 40px;
+  }
+
+  th, td {
+    font-size: 40px;
+  }
+  
+  .scrollbar-auto {
+    height: 300px;
+   
+  }
+  
+  .btn{
+    font-size: 30px;
+    height: 80px;
+
+  }
+
+}
+
+@media only screen and (max-height: 568px)  {
+
+  .navbartop{
+    padding: 1px 15px;
+  }
+
+  
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (min-width: 360px) {
+  .navbar a {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #nav-logo{
+    padding-left: 70px;
+    padding-right: 50px;
+  }
+
+  #cart-logo{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #price-display{
+    margin-bottom: 60px;
+  }
+
+}
+@media screen and (min-width: 400px) {
+  .navbar a {
+    padding-left: 25px;
+    padding-right: 25px;
+  
+  }
+
+  #nav-logo{
+    padding-left: 70px;
+    padding-right: 70px;
+    font-size: 20px;
+  }
+
+  .card-body p{
+    font-size: 18px;
+  }
+
+  .form-label{
+    font-size: 18px;
+  }
+
+ 
+}
+@media screen and (min-width: 540px) {
+  .navbar a {
+    padding-left: 38px;
+    padding-right: 38px;
+    font-size: 20px;
+  
+  }
+
+  .desc{
+    font-size: 20px;
+  }
+
+  #nav-logo{
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  #cart-logo{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .card{
+    width: 97%;
+  }
+
+  #description{
+    font-size: 20px;
+  }
+  
+
+}
+
+@media screen and (min-width: 768px) {
+  .navbar a {
+    padding-left: 45px;
+    padding-right: 45px;
+    font-size: 30px;
+  
+  }
+
+  #nav-logo{
+    padding-left: 175px;
+    padding-right: 175px;
+    font-size: 30px;
+  }
+
+  #cart-logo{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .card-body p, .form-label{
+    font-size: 25px;
+  }
+
+  .card-body{
+    height: 1000px;
+    
+  }
+  .card{
+    width:97%;
+  }
+
+  h4{
+    font-size: 35px;
+  }
+
+  .form-select{
+    line-height: 2.5rem;
+  }
+
+  .bd-highlight,th{
+    font-size: 28px;
+  }
+
+  h3{
+    font-size: 40px;
+  }
+
+  #footer{
+    bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar a {
+    padding-left: 60px;
+    padding-right: 60px;
+    font-size: 40px;
+  
+  }
+  .desc{
+    font-size: 30px;
+  }
+
+  #nav-logo{
+    padding-left: 250px;
+    padding-right: 250px;
+    font-size: 40px;
+  }
+
+  #cart-logo{
+    padding-left: 10px;
+    padding-right: 20px;
+  }
+
+  .card-body p,h3,.form-label{
+    font-size: 35px;
+  }
+
+  .card-body{
+    height: 1500px;
+  }
+
+  .card{
+    width:98%;
+  }
+  .form-select{
+    line-height: 3.5rem;
+  }
+
+  .bd-highlight,th{
+    font-size: 35px;
+  }
+
+  h3{
+    font-size: 50px;
+  }
+
+  h4{
+    font-size: 40px;
+  }
+
+  #footer{
+    bottom: 80px;
+  }
+
+  #description{
+    font-size: 35px;
+  }
+}
+
+/* finish */
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: left;
+    display: block;
+    text-align: left;
+    width: 90%;
+    margin: 0;
+    padding: 14px;
+  }
+  
+  .topnav .search-container button {
+    width: 10%;
+    padding: 12px;
+    padding-right: 5px;
+  }
+
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+
+.responsive{
+  font-family:Oswald-VariableFont_wght;
+}
+
+@media screen and (min-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: left;
+    display: block;
+    text-align: left;
+    width: 97%;
+    margin: 0;
+    padding: 14px;
+  }
+  
+  .topnav .search-container button {
+    width: 1%;
+   
+  
+  }
+
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+@media only screen and (min-width: 1360px) {
+
+  .logo{
+    font-size: 45px;
+    padding:0px 0px 0px 0px;
+    
+  }
+
+  #enter_name{
+    font-size: 25px;
+  }
+
+  .center-block{
+    font-size: 15PX;
+  }
+
+  #button-2 a{
+    font-size: 20px;
+  }
+
+  .button {
+    height: 60px;
+    width: 300px;
+  }
+
+  #description{
+    font-size: 20px;
+  }
+  
+  #footer{
+    bottom: 20px;
+  }
+
+  .btn-group a,.overlay-content a{ 
+    font-size: 20px;
+  }
+
+  .overlay .closebtn {
+    font-size: 25px;
+  }
+
+  li{
+    font-size: 17px;
+  }
+   
+
+  .navbar a {
+    padding : 10px 30px;
+    font-size: 20px;
+  
+  }
+
+  .desc{
+    font-size: 18px;
+  }
+
+  .gallery {
+    width:90%;
+  }
+
+
+  #nav-logo{
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 20px;
+ 
+  }
+
+  #cart-logo{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .card-body p,.form-label{
+    font-size: 17px;
+  }
+
+  h3{
+    font-size: 20px;
+  }
+
+  h4{
+    font-size: 28px;
+  }
+
+  .card{
+    height: 750px;
+    width: 98.5%;
+  }
+
+  #price-display{
+    bottom:50px;
+  }
+
+  .form-select{
+    line-height: 1.5rem;
+  }
+
+  th,.bd-highlight{
+    font-size: 20px;
+  }
+
+  h3{
+    font-size: 30px;
+  }
+
+}
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+

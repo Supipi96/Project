@@ -1,0 +1,154 @@
+extends layout
+
+block content
+    head
+    style.
+      body{
+      margin: 10px;
+      }
+    body   
+    .navbar(style='padding-top: 0px;padding-bottom: 0px;justify-content:left;')
+      a(style='background-color: blue;cursor:pointer')
+        span.active(onclick='openNav1()' style='color:white')
+          i.fa.fa-fw.fa-bars
+      a(href='/new')
+        i.fa.fa-fw.fa-home
+      a(href='' style='font-family:LEIXO-DEMO')  Xoom Hotel
+      a(href='')
+        i.fa.fa-fw.fa-shopping-cart
+    #myNav1.overlay
+      a.closebtn(href='javascript:void(0)' onclick='closeNav1()') ×
+      .overlay-content
+        .btn-group
+          a(data-bs-toggle='dropdown' aria-expanded='false' style='color: white;')
+            | Breakfast
+          ul.dropdown-menu(data-popper-placement='bottom-start' style='position: absolute;inset: 0px auto auto 0px;margin: 0px;transform: translate3d(0px, 20px, 0px);')
+            a(href='/breakfast' style='color: black;font-size: 16px;')
+              li Sri Lankan
+            a(href='#' style='color: black;font-size: 16px;')
+              li Indian
+        br
+        .btn-group
+          a(data-bs-toggle='dropdown' aria-expanded='false' style='color: white;')
+            | Lunch
+          ul.dropdown-menu
+            a(href='#' style='color: black;font-size: 16px;')
+              li Sri Lankan
+            a(href='#' style='color: black;font-size: 16px;')
+              li Indian
+        br
+        .btn-group
+          a(data-bs-toggle='dropdown' aria-expanded='false' style='color: white;')
+            | Dinner
+          ul.dropdown-menu
+            a(href='#' style='color: black;font-size: 16px;')
+              li Sri Lankan
+            a(href='#' style='color: black;font-size: 16px;')
+              li Indian
+        br
+        .btn-group
+          a(data-bs-toggle='dropdown' aria-expanded='false' style='color: white;')
+            | Beer
+          ul.dropdown-menu
+            a(href='#' style='color: black;font-size: 16px;')
+              li Sri Lankan
+            a(href='#' style='color: black;font-size: 16px;')
+              li Indian
+        br
+        .btn-group
+          a(data-bs-toggle='dropdown' aria-expanded='false' style='color: white;')
+            | Starter
+          ul.dropdown-menu
+            a(href='#' style='color: black;font-size: 16px;')
+              li Sri Lankan
+            a(href='#' style='color: black;font-size: 16px;')
+              li Indian
+        br
+        .btn-group
+          a(data-bs-toggle='dropdown' aria-expanded='false' style='color: white;')
+            | Cocktails
+          ul.dropdown-menu
+            a(href='#' style='color: black;font-size: 16px;')
+              li Sri Lankan
+            a(href='#' style='color: black;font-size: 16px;')
+              li Indian
+        br
+        .btn-group
+          a(data-bs-toggle='dropdown' aria-expanded='false' style='color: white;')
+            | Mocktails
+          ul.dropdown-menu
+            a(href='#' style='color: black;font-size: 16px;')
+              li Sri Lankan
+            a(href='#' style='color: black;font-size: 16px;')
+              li Indian
+        br
+        .btn-group
+          a(data-bs-toggle='dropdown' aria-expanded='false' style='color: white;')
+            | Hard Liquors
+          ul.dropdown-menu
+            a(href='#' style='color: black;font-size: 16px;')
+              li Sri Lankan
+            a(href='#' style='color: black;font-size: 16px;')
+              li Indian
+        br
+        .btn-group
+          a(data-bs-toggle='dropdown' aria-expanded='false' style='color: white;')
+            | Coffee Menu
+          ul.dropdown-menu
+            a(href='#' style='color: black;font-size: 16px;')
+              li Sri Lankan
+            a(href='#' style='color: black;font-size: 16px;')
+              li Indian
+        br
+    .topnav(style='margin-top: 5px;')
+      .search-container
+        form(action='/action_page.php')
+          input(type='text' placeholder='Search..' name='search')
+          button(type='submit')
+            i.fa.fa-search
+    br
+    center 
+      .responsive
+        .gallery
+          a(href='/food1')
+            img(src='images/food1.jpg' alt='Breakfast Gallery')
+        .desc Food 1
+      .responsive
+        .gallery
+          img(src='images/food2.jpg' alt='Breakfast Gallery')
+        .desc Food 2
+      .responsive
+        .gallery
+          img(src='images/food3.jpg' alt='Breakfast Gallery')
+        .desc Food 3
+      .responsive
+        .gallery
+          img(src='images/food4.jpg' alt='Breakfast Gallery')
+        .desc Food 4
+      .responsive
+        .gallery
+          a(href='images/food1.jpg')
+            img(src='images/food1.jpg' alt='Breakfast Gallery')
+        .desc Food 5
+      .responsive
+        .gallery
+          a(href='images/food2.jpg')
+            img(src='images/food2.jpg' alt='Breakfast Gallery')
+        .desc Food 6
+      .responsive
+        .gallery
+          a(href='images/food3.jpg')
+            img(src='images/food3.jpg' alt='Breakfast Gallery')
+        .desc Food 7
+      .responsive
+        .gallery
+          a(href='images/food4.jpg')
+            img(src='images/food4.jpg' alt='Breakfast Gallery')
+        .desc Food 8
+    script.
+      function openNav1() {
+      document.getElementById("myNav1").style.height = "100%";
+      }
+      function closeNav1() {
+      document.getElementById("myNav1").style.height = "0%";
+      }

@@ -1,0 +1,65 @@
+extends layout
+
+block content
+  head
+    style.
+      body{
+      margin: 10px;
+      }
+      .header {
+      position: fixed;
+      bottom: 0;
+      z-index: 1;
+      width: 100%;
+      }
+      .header1 {
+      position: fixed;
+      top: 0;
+      z-index: 1;
+      width: 100%;
+      }
+      .header h2 {
+      text-align: center;
+      }
+      .progress-container {
+      width: 100%;
+      height: 8px;
+      background: #ccc;
+      }
+      .progress-bar {
+      height: 8px;
+      background: #4caf50;
+      width: 0%;
+      }
+  body
+    .navbar(style='padding-top: 0px;padding-bottom: 0px;justify-content:left;')
+      a.active(href='/new' style='background-color: blue;')
+        i.fa.fa-fw.fa-bars
+      a(href='' style='font-family:LEIXO-DEMO' id='nav-logo')  Xoom Hotel
+      a(href='' id='cart-logo')
+        i.fa.fa-fw.fa-shopping-cart
+    .card
+      .card-body
+        #img-description
+          img#img-description(src='images/food1.jpg' alt='Spa Gallery')
+        div(style='padding: 10px;')
+          h3  Egg Hoppers 
+          p
+            | Lowest price Gaurantee! Book at over 2,111,000 hotels online. Read Real Guest Reviews. 24/7 Customer Service.
+            | Get instant Confirmation. Best Price Guarantee. We speak your language. No Booking Fees. Type:
+          p  Quantity 
+          select.form-select.form-select-sm(aria-label='.form-select-sm example')
+            option(selected='')
+            option(value='1') One
+            option(value='2') Two
+            option(value='3') Three
+          br   
+          .mb-3
+            label.form-label(for='exampleFormControlTextarea1') Note
+            textarea#exampleFormControlTextarea1.form-control(rows='3')
+          p(id='price-display') Price 200
+    center
+      .header(style='background-color: white;padding-bottom: 10px;padding-top: 10px;')
+        a(href='/batch-item-breakfast')
+          button.btn.btn-success(type='button' style='margin-right:10px')  Add to card
+        button.btn.btn-danger(type='button') Cancel

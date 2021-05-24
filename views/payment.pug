@@ -1,0 +1,100 @@
+extends layout
+
+block content
+  head
+    style.
+      body{
+      margin: 10px;
+      }
+      .header {
+      position: fixed;
+      bottom: 0;
+      z-index: 1;
+      width: 100%;
+      }
+      .header1 {
+      position: fixed;
+      top: 0;
+      z-index: 1;
+      width: 100%;
+      }
+      .header h2 {
+      text-align: center;
+      }
+      .progress-container {
+      width: 100%;
+      height: 8px;
+      background: #ccc;
+      }
+      .progress-bar {
+      height: 8px;
+      background: #4caf50;
+      width: 0%;
+      }
+  body
+    .navbar(style='padding-top: 0px;padding-bottom: 0px;justify-content:left;')
+      a.active(href='/new' style='background-color: blue;')
+        i.fa.fa-fw.fa-bars
+      a(href='' style='font-family:LEIXO-DEMO' id='nav-logo')  Xoom Hotel
+      a(href='' id='cart-logo')
+        i.fa.fa-fw.fa-shopping-cart
+    div(style='margin-right: 10px;margin-left: 10px;')
+      h3(style='margin: 5px;padding-left: 0px; padding-top:10px')  Cart 
+      br
+      table.table.table-striped(style='width: 100%;margin-bottom: 0px;background-color: white;')
+        tbody
+          tr
+            th  Papaya Juice
+            th Price
+            th Qty
+            th Sub Total
+            th Delete
+      .scrollbar-auto
+        table.table.table-success.table-striped(style='width: 100%;')
+          tbody
+            tr
+              td Papaya juice
+              td 100
+              td(style='padding-left: 20px;') 1
+              td(style='padding-left: 10px;')  100
+              td
+                i.fa.fa-trash(style='color: rgb(109, 105, 105);padding-top: 12px;padding-left: 25px;' id='trash')
+            tr
+              td Papaya juice
+              td 100
+              td(style='padding-left: 20px;') 1
+              td(style='padding-left: 10px;') 100
+              td
+                i.fa.fa-trash(style='color: rgb(109, 105, 105);padding-top: 12px;padding-left: 25px;' id='trash')
+            tr
+              td Papaya juice
+              td 100
+              td(style='padding-left: 20px;') 1
+              td(style='padding-left: 10px;') 100
+              td
+                i.fa.fa-trash(style='color: rgb(109, 105, 105);padding-top: 12px;padding-left: 25px;' id='trash')
+            tr
+              td Papaya juice
+              td 100
+              td(style='padding-left: 20px;') 1
+              td(style='padding-left: 10px;')  100
+              td
+                i.fa.fa-trash(style='color: rgb(109, 105, 105);padding-top: 12px;padding-left: 25px;' id='trash')
+            tr
+              td
+      .d-flex.justify-content-between
+        .p-2.bd-highlight Ref No XXXXX
+        .d-flex.justify-content-end
+          .p-2.bd-highlight Total
+          .p-2.bd-highlight 1200
+      br
+      .mb-3
+        label.form-label(for='exampleFormControlTextarea1') Comment
+        textarea#exampleFormControlTextarea1.form-control(rows='3')
+      br
+    center
+
+      .header(style='background-color: white;padding-bottom: 10px;padding-top: 10px;')
+        a(href='/batch-item-breakfast')
+          button.btn.btn-success(type='button' style='margin-right:10px')  Order
+        button.btn.btn-danger(type='button') Cancel

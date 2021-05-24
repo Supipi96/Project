@@ -1,0 +1,72 @@
+extends layout
+
+block content
+  head
+    title Service list details
+    style.
+      body{
+      margin: 10px;
+      }
+      .header {
+      position: fixed;
+      bottom: 0;
+      z-index: 1;
+      width: 100%;
+      }
+      .header h2 {
+      text-align: center;
+      }
+      .progress-container {
+      width: 100%;
+      height: 8px;
+      background: #ccc;
+      }
+      .progress-bar {
+      height: 8px;
+      background: #4caf50;
+      width: 0%;
+      }
+  body
+    .navbar(style='padding-top: 0px;padding-bottom: 0px;')
+      a.active(href='/new' style='background-color: blue;')
+        i.fa.fa-fw.fa-bars
+      a(href='#' style='font-family:LEIXO-DEMO')  Xoom Hotel
+      a(href='#')  
+    .card
+      .card-body
+        #img-description
+          img#img-description(src='images/bike.jpg' alt='Spa Gallery')
+        h4  Bike Services 
+        p
+          | Lowest price Gaurantee! Book at over 2,111,000 hotels online. Read Real Guest Reviews.
+        p  Price Type 
+        select.form-select(aria-label='Default select example')
+          option(selected='') Price per person
+          option(value='1') One
+          option(value='2') Two
+          option(value='3') Three
+        br
+        p  Quantity 
+        select.form-select(aria-label='Default select example')
+          option(selected='')
+          option(value='1') One
+          option(value='2') Two
+          option(value='3') Three
+        br
+        p  Other options 
+        select.form-select(aria-label='Default select example')
+          option(selected='')
+          option(value='1') One
+          option(value='2') Two
+          option(value='3') Three
+        br
+        .mb-3
+          label.form-label(for='exampleFormControlTextarea1') Note
+          textarea#exampleFormControlTextarea1.form-control(rows='3')
+        p(id='price-display') Price 200
+    center
+      .header(style='background-color: white;padding-bottom: 10px;padding-top: 10px;')
+        a(href='/summery' style='margin-right:10px')
+          button.btn.btn-success(type='button')  Confirm 
+        a(href='/return')
+          button.btn.btn-danger(type='button') Cancel

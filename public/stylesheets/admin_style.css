@@ -1,0 +1,488 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+
+body{
+  padding: 0px 30px 0px 30px;
+}
+
+/* fonts */
+
+@font-face{
+  font-family:LEIXO-DEMO;
+  src:url(../fonts/LEIXO-DEMO.ttf);
+  
+}
+
+
+/* login */
+img.logo{ max-width: 13%;}
+.loginform{
+  border:2px solid rgb(209, 204, 204);
+  height: 565px;}
+.form-label{
+  font-size: x-large;
+  font-weight: 500;}
+.login{
+  text-align: center;
+  font-size: xxx-large;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.form-control{
+  font-size: xx-large;
+}
+.form{
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.loginbtn{
+  font-size: xx-large;
+}
+.forgetpw{font-size: 18px;}
+
+
+
+
+
+/* dashboard */
+.btnrow{
+  float: right;
+}
+.padding-row{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.rounded-circle{
+  width: 50px !important;
+  border: 2px !important;
+}
+
+th{
+  font-size: 20px;
+  text-align: center;
+}
+td{
+  font-size: 20px;
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+  text-align: center;
+}
+.dashb{
+  font-size: x-large;
+}
+.setting{
+  margin-right: 25px;
+}
+li{
+  padding-right: 5px !important;
+}
+
+.dashboard-modal-label{
+  display: inline;
+  font-size: 20px;
+
+}
+.dashboard-modal-p{
+  display: inline;
+  font-size: 17px;
+}
+
+
+/* rooms */
+.add-room-btn{
+  float: right;
+}
+.searchbar-rooms{
+  font-size: 15px !important;
+}
+.room-name{
+  border-color: darkgrey !important;
+}
+.btn-success{
+  float: right;
+}
+
+.room-form-select{
+  font-size: 20px;
+}
+
+.textbox{
+  height: 40px;
+}
+.room-save-btn{
+  margin-right: 10px;
+}
+.room-adults{
+  padding-bottom: 10px;
+}
+.room-label{
+  padding-top: 25px;
+  font-size: 22px;
+}
+.room-active-checkbox{
+  margin-top: 30px;
+  font-size: 22px;
+}
+
+
+/* category */
+
+.add-category-btn{
+  float: right;
+}
+.searchbar-category{
+  font-size: 15px !important;
+}
+.category-name{
+  border-color: darkgrey !important;
+}
+
+
+.category-form-select{
+  font-size: 20px;
+}
+
+.category-save-btn{
+  margin-right: 10px;
+}
+.category-adults{
+  padding-bottom: 10px;
+}
+.category-label{
+  padding-top: 25px;
+  font-size: 22px;
+}
+.category-active-checkbox{
+  margin-top: 30px;
+  font-size: 22px;
+}
+
+#customFile{
+  font-size: 17px;
+}
+
+/* services */
+
+.add-Service-btn{
+  float: right;
+}
+.searchbar-Service{
+  font-size: 15px !important;
+}
+.Service-name{
+  border-color: darkgrey !important;
+}
+
+
+.Service-form-select{
+  font-size: 20px;
+}
+
+.Service-save-btn{
+  margin-right: 10px;
+}
+.Service-adults{
+  padding-bottom: 10px;
+}
+.Service-label{
+  padding-top: 25px;
+  font-size: 22px;
+}
+.Service-active-checkbox{
+  margin-top: 30px;
+  font-size: 22px;
+}
+
+/* sub category */
+.add-sub-category-btn{
+  float: right;
+}
+.searchbar-sub-category{
+  font-size: 15px !important;
+}
+.sub-category-name{
+  border-color: darkgrey !important;
+}
+
+
+.sub-category-form-select{
+  font-size: 20px;
+}
+
+.sub-category-save-btn{
+  margin-right: 10px;
+}
+.sub-category-adults{
+  padding-bottom: 10px;
+}
+.sub-category-label{
+  padding-top: 25px;
+  font-size: 22px;
+}
+.sub-category-active-checkbox{
+  margin-top: 30px;
+  font-size: 22px;
+}
+
+
+.btn-outline-secondary,.btn-outline-primary,.btn-outline-danger,.btn-outline-succes{
+  margin-right: 5px;
+}
+
+
+
+
+/* responsive */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 280px) {
+  #profile{
+    display: none;
+    padding-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+
+  .btn-outline-secondary,.btn-outline-primary,.btn-outline-danger,.btn-outline-success{
+    margin-top: 5px;
+  }
+
+}
+
+
+@media only screen and (max-width: 480px) {
+
+  body{
+    padding: 0px 8px 0px 8px;
+  }
+
+  .loginform{
+    border:none;
+    height: 400px;}
+    .form{
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .loginbtn{
+      font-size: medium;
+
+    }
+    .forgetpw{font-size: 15px;}
+    .form-label{
+      font-size: larger;
+      font-weight: 500;}
+    .login{
+      text-align: center;
+      font-size: xx-large;
+      padding-top: 15px;
+      padding-bottom: 25px;
+    }
+    .form-control{
+      font-size: larger;
+    }
+    img.logo{ max-width: 30%;}
+
+    .btnrow{
+      margin-bottom: 5px;
+
+    }
+
+    .btn-outline-danger,.btn-outline-primary{
+      margin-top: 5px;
+    }
+
+      
+    td{
+      font-size: 20px;
+   
+    }
+
+    th{
+      font-size: 20px;
+    }
+
+    .nav-link{
+      font-size: 20px;
+    }
+
+    #row>*  {
+      width: 50%;
+    }
+
+    .form-outline{
+      padding-top: 12px;
+    }
+  }
+
+
+@media only screen and (max-width: 540px) {
+
+  h5{
+    font-size: 1px;
+  }    
+  
+
+  th,td{
+    font-size: 20px;
+  }
+
+  .nav-link{
+    font-size: 20px;
+  }
+
+  #row>*  {
+    width: 50%;
+  }
+
+  .modal-body {
+    padding: 1rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+}
+
+#customFile {
+  font-size: 15px;
+}
+
+.form-control {
+  font-size: medium;
+}
+
+input[type="file" i] {
+  width: 95%;
+  
+}
+
+ 
+.form-outline{
+  padding-top: 18px;
+}
+
+  #price-box1, #price-box2{
+    width: 100%;
+    padding:1px;
+    text-align: center;   
+  }
+
+  #price-box2{
+    margin-left: 5px;
+  }
+
+  .edit-btn{
+    margin-left: 10px;
+  }
+
+}
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .loginform{
+    border:2px solid rgb(209, 204, 204);
+    height: 450px;}
+    .form{
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .loginbtn{
+      font-size: medium;
+
+    }
+    .forgetpw{font-size: 15px;}
+    .form-label{
+      font-size: larger;
+      font-weight: 500;}
+    .login{
+      text-align: center;
+      font-size: xx-large;
+      padding-top: 15px;
+      padding-bottom: 25px;
+    }
+    .form-control{
+      font-size: larger;
+    }
+    img.logo{ max-width: 25%;}
+
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  img.logo{ max-width: 20%;}
+  .loginform{
+    border:2px solid rgb(209, 204, 204);
+    height: 450px;
+  }
+
+  
+  .form-outline{
+    padding-top: 12px;
+  }
+
+  #price-box1, #price-box2 {
+    width: 100%;
+    padding:1px;
+    text-align: center;
+    font-size: 20px;
+    
+  }
+
+  #price-box2{
+    margin-left: 30px;
+  }
+
+  #service-search{
+    width: 32.5%;
+  }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  img.logo{ max-width: 10%;}
+  .loginform{
+    border:2px solid rgb(209, 204, 204);
+    height: 565px;}
+  .form-label{
+    font-size: x-large;
+    font-weight: 500;}
+  .login{
+    text-align: center;
+    font-size: xxx-large;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .form-control{
+    font-size: xx-large;
+  }
+  .form{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .loginbtn{
+    font-size: xx-large;
+  }
+  .forgetpw{font-size: 18px;}
+
+
+  th, td{
+    font-size: 20px;
+  }
+
+  .form-outline{
+    padding-top: 23px;
+  }
+
+
+
+}
+
+
+
+
+
+
+
+
